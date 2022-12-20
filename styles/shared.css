@@ -7,9 +7,26 @@ ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    padding: 15px 60px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    margin: 10px
+}
+
+header ul {
+    display: flex;
 }
 
 li a {
+    padding: 10px;
     text-decoration: none;
     font: 'DM Sans', sans-serif;
 }
