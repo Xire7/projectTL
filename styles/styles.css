@@ -56,15 +56,3 @@ header {
     background-color:rgba(154, 124, 64, 0.9);
 }
 
-header li {
-    text-decoration: none;
-    padding: 10px;
-    margin-left: 20px;
-    background-color: rgba(59, 59, 59, 0.83);
-    border-radius: 10px;
-}
-
-header .other-pages {
-    color: rgb(38, 162, 137);
-    font-family: 'DM Sans', sans-serif;
-}
