@@ -41,3 +41,22 @@ li a {
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 
 }
+
+header li {
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: rgba(59, 59, 59, 0.83);
+    border-radius: 10px;
+}
+
+header .other-pages {
+    color: rgb(38, 162, 137);
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+header li:hover {
+    background-color: rgba(79, 79, 79, 0.83);
+
+}    
+
