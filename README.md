@@ -1,1 +1,1 @@
-"# projectTL-design2 / refined" 
+Tier List Project, design proposal 2.
