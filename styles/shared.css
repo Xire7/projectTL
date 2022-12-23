@@ -3,7 +3,7 @@ body {
     margin: 0px;
 }
 
-ul {
+header ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -60,3 +60,44 @@ header li:hover {
 
 }    
 
+footer {
+    height: 60px;
+    padding: 5px;
+    background: linear-gradient(70deg, rgb(24,24,24), rgb(25,29,29));
+}
+
+footer li {
+    height: 100%;
+    width: 24px;
+    margin: 5px 10px;
+}
+
+footer ul {
+    height: 24px;
+    list-style: none;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: left;
+}
+
+footer img {
+    height: 100%;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+footer a {
+    padding: 0px;
+
+}
+
+#cc {
+    width: 100%;
+}
+
+#cc  {
+    color: rgb(242, 232, 200);
+    font-size: 15px;
+}
