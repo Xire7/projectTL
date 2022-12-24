@@ -7,14 +7,7 @@
     overflow: auto;
 }
 
-header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    box-sizing: border-box;
-}
+
 
 #main-block {
     width: 50%;
