@@ -17,7 +17,6 @@
     text-align: center;
     padding: 45px 0px;
     margin: 13% auto 4% auto;
-    position: relative;
 }
 
 #main-block h1 {
@@ -53,8 +52,6 @@
 }
 
 #separator-tag {
-    position: relative;
-    top: 17%;
     text-align: center;
     font-size: 30px;
     font-family: 'Fira Sans', sans-serif;
@@ -77,6 +74,7 @@
     padding: 5px 30px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    overflow: auto;
 
 }
 
@@ -110,3 +108,18 @@
     text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 
+
+@media (max-width: 48rem) {
+    #highlights {
+        flex-direction: column;
+        height: 1200px;
+        align-items: center;
+    }
+    .supporting-blocks {
+        width: 60%;
+        height: 60%;
+    }
+    #main-block {
+        width: 85%;
+    }
+}

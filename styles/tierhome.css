@@ -6,12 +6,12 @@ header {
 }
 
 main ul {
-    width: 1200px;
-    margin: 0px auto 48px auto;
-    padding: 0px;
     display: grid;
+    width: 95%;
+    margin: 0px auto 3rem auto;
+    padding: 0px;
     grid-template-columns: 1fr 1fr;
-    gap: 50px 100px;
+    gap: 3.125rem 6.25rem;
 }
 
 li:nth-of-type(3), li:nth-of-type(6) {
@@ -26,7 +26,7 @@ main li img {
 }
 
 main li {
-    height: 300px;
+    height: 18.75rem;
     overflow: hidden;
     display: flex;
     background-color: rgb(255,255,255);
@@ -46,8 +46,10 @@ main li {
 }
 
 .category-content {
+    font-size: 1.1vw;
     width: 62.5%;
-    padding: 20px;
+    padding: 1.25rem;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,7 +62,7 @@ main li {
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
     color: rgb(49, 150, 119);
-    padding: 10px 8px 10px 11px;
+    padding: 0.625rem 0.5rem 0.625rem 0.6875rem;
 }
 
 .actions a:hover{
@@ -68,4 +70,38 @@ main li {
     background-color: rgb(30, 118, 92);
     border-radius: 20px;
     
+}
+
+@media (max-width: 48rem) {
+    main ul {
+        grid-template-columns: 1fr;
+        gap: 3.125rem 0rem;
+    }
+
+    li:nth-of-type(3), li:nth-of-type(6) {
+        grid-column: 1 / span 1;
+    }
+
+    main li img {
+        width: 50.5%;
+        height: 120%;
+        object-fit: cover;
+    }
+    .category-content {
+        width: 45.5%;
+        padding: 1.5rem;
+        display: flex;
+        overflow: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        font-size: 1.9vw;
+    }
+
+}
+
+@media (max-width: 53.75rem) {
+    nav {
+        display: none;
+    }
 }
