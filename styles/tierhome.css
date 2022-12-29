@@ -7,7 +7,7 @@ header {
 
 main ul {
     display: grid;
-    width: 95%;
+    width: 75%;
     margin: 0px auto 3rem auto;
     padding: 0px;
     grid-template-columns: 1fr 1fr;
@@ -46,15 +46,26 @@ main li {
 }
 
 .category-content {
-    font-size: 1.1vw;
+    font-size: 1.02vw;
     width: 62.5%;
     padding: 1.25rem;
-    overflow: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
+
+.header-paragraph > p{
+    color: rgb(99, 99, 99);
+}
+
+.header-paragraph h2 {
+    color: rgb(38, 38, 38);
+    font-family: 'Arvo', sans-serif;
+    font-size: 1.33rem;
+}
+
 .actions {
     text-align: right;
 }
