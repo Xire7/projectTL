@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(55,55,55);
+    font-family: 'Arvo', sans-serif
+}
+
+form {
+    background: rgba(192, 190, 190, 0.6);
+    width: 30rem;
+    padding: 1rem 2rem 3rem 2rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.25rem;
+}
+
+form input:focus {
+    background-color: rgb(226, 235, 194);
+}
+
+.radio-inline {
+    display: flex;
+}
+
+.radio-inline input {
+    width: auto;  /* sets width based on content */
+    margin: 0.5rem;
+}
+
+form button {
+    display: block;
+    margin: 0.25rem 0;
+    font: inherit;
+    background-color:rgb(180, 183, 168);
+    padding: 0.5rem;
+    cursor: pointer;
+    border-color: rgb(51, 51, 51);
+}
+
+
+
+button:hover {
+    background-color: rgb(239, 238, 205);
+}
+

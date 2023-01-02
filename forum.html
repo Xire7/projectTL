@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Gangdex</title>
+    <title>PowerForums</title>
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/forum.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -59,6 +59,47 @@
         </ul>
       </nav>
     </aside>
+    <main>
+      <section>
+        <form action="/forum.html" method="GET">
+          <label for="submitpost"> Write a post </label>
+          <input type="text" name="submit-post" id="submitpost" />
+          <label for="useremail"> Your email address</label>
+          <input type="email" name="user-email" id="useremail" />
+          <label for="userage"> Your age</label>
+          <input type="number" step="1" name="user-age" id="userage" />
+          <label for="userpassword">Your password </label>
+          <input type="password" name="user-password" id="userpassword" />
+          <label for="userdate">Your birthdate</label>
+          <input type="date" name="user-date" id="userdate" />
+          <hr />
+          <h2>Forum Tags</h2>
+          <div class="radio-inline">
+            <input
+              type="radio"
+              name="tags"
+              id="selected-opinion"
+              value="opinion"
+            />
+            <label for="selected-opinion">Opinion</label>
+          </div>
+          <div class="radio-inline">
+            <input type="radio" name="tags" id="selected-meme" value="meme" />
+            <label for="selected-meme">Meme</label>
+          </div>
+          <div class="radio-inline">
+            <input
+              type="radio"
+              name="tags"
+              id="selected-question"
+              value="question"
+            />
+            <label for="selected-question">Question</label>
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
     <footer>
       <ul>
         <li>
