@@ -60,44 +60,52 @@
       </nav>
     </aside>
     <main>
-      <section>
-        <form action="/forum.html" method="GET">
-          <label for="submitpost"> Write a post </label>
-          <input type="text" name="submit-post" id="submitpost" />
-          <label for="useremail"> Your email address</label>
-          <input type="email" name="user-email" id="useremail" />
-          <label for="userage"> Your age</label>
-          <input type="number" step="1" name="user-age" id="userage" />
-          <label for="userpassword">Your password </label>
-          <input type="password" name="user-password" id="userpassword" />
-          <label for="userdate">Your birthdate</label>
-          <input type="date" name="user-date" id="userdate" />
-          <hr />
-          <h2>Forum Tags</h2>
-          <div class="radio-inline">
-            <input
-              type="radio"
-              name="tags"
-              id="selected-opinion"
-              value="opinion"
-            />
-            <label for="selected-opinion">Opinion</label>
-          </div>
-          <div class="radio-inline">
-            <input type="radio" name="tags" id="selected-meme" value="meme" />
-            <label for="selected-meme">Meme</label>
-          </div>
-          <div class="radio-inline">
-            <input
-              type="radio"
-              name="tags"
-              id="selected-question"
-              value="question"
-            />
-            <label for="selected-question">Question</label>
-          </div>
-          <button>Submit</button>
-        </form>
+      <section id="background-image">
+        <section>
+          <form action="/forum.html" method="GET">
+            <h1> PowerForums: Submit a Post</h1>
+            <section>
+              <ul>
+                <li>
+                  <label for="titlepost"> Title of post </label>
+                  <input type="text" name="title-post" id="titlepost" required placeholder="Liz Gaps Pauggers"/>
+                </li>
+                <li>
+                  <label for="textdesc">Write a description</label>
+                  <textarea id="textdesc" name="user-desc" required placeholder="Write a couple of bars..." rows="8" minlength="69"></textarea>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <ul>
+                <h2> Select the best-fitting tag </h2>
+                <li class="tag-ctn">
+                  <input type="radio" id="opinion" name="tag" required value="selected-opinion" />
+                  <label for="opinion">Opinion</label>
+                </li>
+                <li class="tag-ctn">
+                  <input type="radio" id="meme" name="tag" required value="selected-meme"/>
+                  <label for="meme">Meme</label>
+                </li>
+                <li class="tag-ctn">
+                  <input type="radio" id="question" name="tag" required value="selected-question" />
+                  <label for="question">Question</label>
+                </li>
+              </ul>
+            </section>
+            <hr />
+            <section id="check-ctn">
+              <div class="check-ctn">
+                <input type="checkbox" id="summoners-code" name="summoners-code" required />
+                <label for="summoners-code">I adhere to PowerForums' Summoner Code</label>
+              </div>
+            </section>
+            <div id="buttons-ctn">
+              <button type="reset" id="clear">Clear</button>
+              <button type="submit">Post</button>
+            </div>
+          </form>
+        </section>     
       </section>
     </main>
     <footer>
