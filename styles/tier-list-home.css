@@ -1,14 +1,21 @@
 body {
     background: linear-gradient(30deg, rgb(77,77,77), rgb(58,58,58));
 }
-header {
+
+
+#main-image {
+    background-image: url(/images/index-images/main-image.JPG);
     position: static;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+    overflow: auto;
 }
 
 main ul {
     display: grid;
     width: 75%;
-    margin: 0px auto 3rem auto;
+    margin: 9rem auto 5rem auto;
     padding: 0px;
     grid-template-columns: 1fr 1fr;
     gap: 3.125rem 6.25rem;
@@ -29,19 +36,14 @@ main li {
     height: 18.75rem;
     overflow: hidden;
     display: flex;
-    background-color: rgb(255,255,255);
+    background-color: rgba(72, 71, 71, 0.8);
     box-shadow: 3px 3px 5px rgb(0,0,0,0.2);
     border-radius: 5px;
 
 }
 
-.header-paragraph h2 {
-    color: rgb(19, 19, 19);
-    font-family: 'Fira Sans', sans-serif;
-}
-
 .header-paragraph p {
-    color: rgb(60, 60, 60);
+    color: rgb(235, 235, 235);
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -56,14 +58,12 @@ main li {
     box-sizing: border-box;
 }
 
-.header-paragraph > p{
-    color: rgb(99, 99, 99);
-}
 
 .header-paragraph h2 {
-    color: rgb(38, 38, 38);
-    font-family: 'Arvo', sans-serif;
-    font-size: 1.33rem;
+    color: rgb(213, 222, 194);
+    font-family: 'Gentium Plus', sans-serif;
+    font-size: 1.44rem;
+    margin-top: 0.1rem;
 }
 
 .actions {
@@ -72,15 +72,16 @@ main li {
 .actions a {
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
-    color: rgb(49, 150, 119);
+    color: rgb(213, 222, 194);
     padding: 0.625rem 0.5rem 0.625rem 0.6875rem;
+    transition: background-color 0.25s ease-in;
+    border-radius: 20px;
+
 }
 
 .actions a:hover{
-    color: rgb(191, 218, 210);
-    background-color: rgb(30, 118, 92);
-    border-radius: 20px;
-    
+    color: rgb(213, 222, 194);
+    background-color: rgb(29, 145, 110);    
 }
 
 @media (max-width: 48rem) {

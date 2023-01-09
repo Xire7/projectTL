@@ -1,0 +1,44 @@
+#main-image {
+    height: 100%;
+    background-image: url("/images/s-tier/main-image.JPG");
+    background-size: cover;
+    background-position: center;
+    position: static;
+    overflow: auto;
+    width: 100%;
+}
+
+ol {
+    width: 65%;
+    margin: 7rem auto 3rem auto;
+    text-align: center;
+    list-style: none;
+    color: rgb(232, 232, 232);
+    font-family: 'Gentium Plus', serif;
+    height: 1000px;
+}
+
+ol h1 {
+    font-family: 'Gentium Plus', serif;
+    font-weight: bold;
+    font-size: 4rem;
+    
+}
+li {
+    background-color: rgba(51,51,51,0.6);
+    padding: 0.4rem;
+}
+main li img {
+    width: 50%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+#greg {
+    object-position: top;
+}
+
+ol h3 {
+    font-size: 2rem;
+}
+

@@ -58,7 +58,8 @@ header li {
 
 header .other-pages {
     color: rgb(38, 162, 137);
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
 }
 
 header li:hover {
